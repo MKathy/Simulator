@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1520849532 source:c:\users\katarzyna\desktop\cpp\kolej\main.cpp
+	<iostream>
+	<windows.h>
+
