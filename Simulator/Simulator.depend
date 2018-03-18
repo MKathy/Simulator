@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1521398354 source:c:\users\katarzyna\documents\github\simulator\simulator\main.cpp
+	<iostream>
+	<conio.h>
+	<windows.h>
+	<cstdio>
+
