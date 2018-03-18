@@ -42,8 +42,9 @@ for(;;)
             break;
 
         }
-        getchar();
-        getchar();
+        choice = getch();
+        if(choice == 0)
+            choice = getch();
         system("cls");
 }
     return 0;
