@@ -32,9 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="functions.cpp" />
+		<Unit filename="display_main_menu.cpp" />
 		<Unit filename="functions.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="play.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

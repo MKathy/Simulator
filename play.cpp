@@ -1,20 +1,11 @@
+#ifndef play_hpp
+#define play_hpp
 #include <iostream>
+#include "functions.h"
 #include <cstdio>
 #include <windows.h>
-#include "functions.h"
 
 using namespace std;
-
-void display_main_menu()
-{
-    cout << "--------------" << endl ;
-    cout << "   Menu:" << endl ;
-    cout << "--------------" << endl ;
-    cout << "1. Play" << endl;
-    cout << "2. Leaderboard" << endl;
-    cout << "3. Save Game" << endl;
-    cout << "4. Exit" << endl;
-}
 
 void play()
 {
@@ -31,5 +22,5 @@ void play()
     cout << endl << "4. Ask for promotion";
     cout << endl << "Exit";
 }
-
+#endif
 
