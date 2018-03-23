@@ -5,8 +5,6 @@
 
 using namespace std;
 
-char choice;
-
 void play()
 {
 
@@ -24,6 +22,7 @@ int main()
         cout << "4. Exit" << endl;
 
         cout << "Your choice: ";
+        char choice;
 
         choice = getch();
 
@@ -32,8 +31,17 @@ int main()
         {
         case '1':
             system("cls");
-            cout << "Year: 4/71\tActions: 1/2\tMoney: 53\tIntelligence: 13\tHappiness: 87" << endl;
-            cout << "\n1. Work\n2. Study\n3. Fun\n4. Ask for promotion\n\n0. Exit" << endl;
+            cout << "Year: 4/71" << "\t";
+            cout << " Actions: 1/2" << "\t";
+            cout << "Money: 53" << "\t";
+            cout << "Intelligence: 13" << "\t";
+            cout << "Happiness: 87" << endl;
+
+            cout << endl << "1. Work";
+            cout << endl << "2. Study";
+            cout << endl << "3. Fun";
+            cout << endl << "4. Ask for promotion";
+            cout << endl << "Exit";
             break;
         case '2':
             cout << "Leaderboard";
@@ -43,13 +51,10 @@ int main()
             break;
         case '4':
             exit(0);
-
             break;
-
         default:
             cout << "Nie ma takiej opcji w menu!" << endl;
             break;
-
         }
         choice = getch();
         if(choice == 0)
