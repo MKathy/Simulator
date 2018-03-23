@@ -1,8 +1,11 @@
-#include "functions.h"
+#include <iostream>
 #include <conio.h>
 #include <windows.h>
 
 using namespace std;
+
+void display_main_menu();
+void play();
 
 int main()
 {
