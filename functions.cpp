@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdio>
 #include <windows.h>
+#include "functions.h"
 
 using namespace std;
 
