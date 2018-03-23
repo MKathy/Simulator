@@ -1,5 +1,3 @@
-#ifndef play_hpp
-#define play_hpp
 #include <iostream>
 #include "functions.h"
 #include <cstdio>
@@ -22,5 +20,3 @@ void play()
     cout << endl << "4. Ask for promotion";
     cout << endl << "Exit";
 }
-#endif
-

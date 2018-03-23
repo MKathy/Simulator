@@ -1,5 +1,3 @@
-#ifndef display_main_menu_hpp
-#define display_main_menu_hpp
 #include <iostream>
 #include "functions.h"
 
@@ -16,5 +14,4 @@ void display_main_menu()
     cout << "4. Exit" << endl;
 }
 
-#endif
 
