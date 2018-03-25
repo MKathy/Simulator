@@ -1,7 +1,8 @@
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
-#include "functions.h"
+#include "main_menu.h"
+#include "play.h"
 
 using namespace std;
 
@@ -25,7 +26,7 @@ int main()
             cout << "Leaderboard";
             break;
         case '3':
-            cout << "Save Game";
+            cout << "Load Game";
             break;
         case '4':
             exit(0);
