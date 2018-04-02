@@ -14,7 +14,7 @@ int main()
         cout << "Your choice: ";
         char choice;
 
-        choice = getch();
+        choice = static_cast<char>(getch());
 
         cout << endl;
         switch(choice)
@@ -29,15 +29,12 @@ int main()
             cout << "Load Game";
             break;
         case '4':
-            exit(0);
-            break;
+            return 0;
         default:
-            cout << "Nie ma takiej opcji w menu!" << endl;
+            cout << "There is no option!" << endl;
             break;
         }
-        choice = getch();
-        if(choice == 0)
-            choice = getch();
+        getch();
         system("cls");
     }
     return 0;

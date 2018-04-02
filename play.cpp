@@ -1,6 +1,5 @@
 #include <iostream>
 #include "play.h"
-#include <cstdio>
 #include <windows.h>
 #include <conio.h>
 
@@ -13,7 +12,7 @@ void play()
     int intelligence = 20;
     int happiness = 100;
     int work_level = 1;
-    char choice;
+    int choice;
 
 
     for(;;)
@@ -51,6 +50,9 @@ void play()
             break;
         case '5':
             exit(0);
+        default:
+            cout << endl << "There is no option!" << endl;
+            break;
         }
         Sleep(1000);
     }
