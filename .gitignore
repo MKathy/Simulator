@@ -8,3 +8,7 @@
 # generated directories
 bin/
 obj/
+
+# CLion
+.idea/
+cmake-build-debug/
