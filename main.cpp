@@ -37,5 +37,4 @@ int main()
         getch();
         system("cls");
     }
-    return 0;
 }
