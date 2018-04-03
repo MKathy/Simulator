@@ -9,75 +9,93 @@ using namespace std;
 void play()
 {
     int year = 1;
-    int money = 10;
+    int money = 0;
     int intelligence = 0;
     int happiness = 100;
     int work_level = 1;
     int choice;
-    int to_promotion;
-
+    int action = 1;
+    int salary = 10;
 
     for(;;)
     {
-        int action = 1;
-        while(action <= 2)
+        system("cls");
+        cout << "Year: " << year << "/75" << "\t";
+        cout << " Actions: " << action << "/2" << "\t";
+        cout << "Money: " << money << "\t";
+        cout << "Intelligence: " << intelligence << "\t";
+        cout << "Happiness: " << happiness << endl;
+
+        cout << endl << "1. Work";
+        cout << endl << "2. Study";
+        cout << endl << "3. Fun";
+        cout << endl << "4. Ask for promotion";
+        cout << endl << "5. Exit";
+
+        cout << endl << "Your choice: ";
+        choice = getch();
+
+        switch(choice)
         {
-            system("cls");
-            cout << "Year: " << year << "/75" << "\t";
-            cout << " Actions: " << action << "/2" << "\t";
-            cout << "Money: " << money << "\t";
-            cout << "Intelligence: " << intelligence << "\t";
-            cout << "Happiness: " << happiness << endl;
-
-            cout << endl << "1. Work";
-            cout << endl << "2. Study";
-            cout << endl << "3. Fun";
-            cout << endl << "4. Ask for promotion";
-            cout << endl << "5. Exit";
-
-            cout << endl << "Your choice: ";
-            choice = getch();
-
-            to_promotion = 5 + pow(2,work_level);
-
-            switch(choice)
+        case '1':
+            money += salary * happiness/100;
+            happiness = happiness - 2;
+            action++;
+            if(action>2)
             {
-            case '1':
-                money += (10 * money * happiness/100);
-                happiness = happiness - 2;
-                action++;
-                break;
-            case '2':
-                intelligence += (5 * happiness/100);
-                happiness = happiness - 2;
-
-                if(intelligence >= (to_promotion))
-                {
-                    money += 10 * money;
-                    work_level++;
-                }
-                action++;
-                break;
-            case '3':
-                if (happiness <= 97)
-                {
-                    happiness += 3;
-                    action++;
-                }
-                else cout << "Happinness can not exceed 100!";
-                break;
-            case '4':
-                cout << endl << "Ask for promotion";
-                cout << endl << "To promotion: " << to_promotion;
-                break;
-            case '5':
-                exit(0);
-            default:
-                cout << endl << "There is no option!" << endl;
-                break;
+                action = 1;
+                year++;
             }
-            Sleep(2000);
+            break;
+        case '2':
+            intelligence += 5 * happiness/100;
+            happiness -= 2;
+            action++;
+            if(action>2)
+            {
+                action = 1;
+                year++;
+            }
+            break;
+        case '3':
+            if (happiness < 100)
+            {
+                if (happiness <= 97) happiness += 3;
+                else if (happiness <= 98) happiness += 2;
+                else if (happiness <= 99) happiness += 1;
+
+                action++;
+                if(action>2)
+                {
+                    action = 1;
+                    year++;
+                }
+            }
+            else
+            {
+                cout << endl << "Happinness can not exceed 100!";
+                Sleep(1500);
+            }
+            break;
+        case '4':
+            if(intelligence >= 5 + pow(2,work_level))
+            {
+                cout << "You got promoted!";
+                salary += 10;
+                work_level++;
+            }
+            else
+            {
+                cout << endl << "Your intelligence is too low! You need to have IQ = " << pow(2,work_level);
+                Sleep(1500);
+            }
+            break;
+        case '5':
+            exit(0);
+        default:
+            cout << endl << "There is no option!" << endl;
+            break;
         }
-        year++;
+        Sleep(500);
     }
 }
