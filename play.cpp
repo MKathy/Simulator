@@ -41,41 +41,26 @@ void play()
             money += salary * happiness/100;
             happiness = happiness - 2;
             action++;
-            if(action>2)
-            {
-                action = 1;
-                year++;
-            }
             break;
         case '2':
             intelligence += 5 * happiness/100;
             happiness -= 2;
             action++;
-            if(action>2)
-            {
-                action = 1;
-                year++;
-            }
             break;
         case '3':
-            if (happiness < 100)
+            if (happiness == 100)
             {
-                if (happiness <= 97) happiness += 3;
-                else if (happiness <= 98) happiness += 2;
-                else if (happiness <= 99) happiness += 1;
-
-                action++;
-                if(action>2)
-                {
-                    action = 1;
-                    year++;
-                }
-            }
-            else
-            {
-                cout << endl << "Happinness can not exceed 100!";
+                cout << endl << "Happiness can not exceed 100!";
                 Sleep(1500);
+                break;
             }
+            if(happiness <= 97 && happiness >= 0)
+            {
+                happiness += 3;
+                action++;
+            }
+            else if(happiness < 0) happiness = 0;
+            else happiness = 100;
             break;
         case '4':
             if(intelligence >= 5 + pow(2,work_level))
@@ -86,8 +71,8 @@ void play()
             }
             else
             {
-                cout << endl << "Your intelligence is too low! You need to have IQ = " << pow(2,work_level);
-                Sleep(1500);
+                cout << endl << "Your intelligence is too low! You need to have IQ = " << 5 + pow(2,work_level);
+                Sleep(2000);
             }
             break;
         case '5':
@@ -96,6 +81,17 @@ void play()
             cout << endl << "There is no option!" << endl;
             break;
         }
+        if(action>2)
+        {
+            action = 1;
+            year++;
+        }
         Sleep(500);
+        if(year>75)
+        {
+            cout << endl << "Game over! Your result: " << money << " $";
+            Sleep(2000);
+            exit(0);
+        }
     }
 }
