@@ -54,12 +54,11 @@ void play()
                 Sleep(1500);
                 break;
             }
-            if(happiness <= 97 && happiness >= 0)
+            if(happiness <= 97)
             {
                 happiness += 3;
                 action++;
             }
-            else if(happiness < 0) happiness = 0;
             else happiness = 100;
             break;
         case '4':
@@ -87,6 +86,7 @@ void play()
             year++;
         }
         Sleep(500);
+        if(happiness < 0) happiness = 0;
         if(year>75)
         {
             cout << endl << "Game over! Your result: " << money << " $";
