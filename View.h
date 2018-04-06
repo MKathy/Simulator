@@ -1,3 +1,6 @@
+#ifndef VIEW_H
+#define VIEW_H
+
 class View
 {
     int last_action;
@@ -11,3 +14,4 @@ public:
     void clear_screen();
     int get_last_action();
 };
+#endif;
