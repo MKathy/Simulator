@@ -3,7 +3,7 @@
 
 enum ProgramMode
 {
-    MAIN_MENU
-    IN_GAME
+    MAIN_MENU,
+    IN_GAME,
 };
 #endif

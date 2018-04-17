@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Live.cpp" />
+		<Unit filename="Live.h" />
 		<Unit filename="ProgramMode.h" />
 		<Unit filename="View.cpp" />
 		<Unit filename="View.h" />
