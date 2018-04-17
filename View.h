@@ -17,4 +17,4 @@ public:
     int get_last_action();
 //  void set_game(*game);
 };
-#endif;
+#endif

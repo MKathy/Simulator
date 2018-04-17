@@ -31,8 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Live.cpp" />
-		<Unit filename="Live.h" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="Life.cpp" />
+		<Unit filename="Life.h" />
 		<Unit filename="ProgramMode.h" />
 		<Unit filename="View.cpp" />
 		<Unit filename="View.h" />

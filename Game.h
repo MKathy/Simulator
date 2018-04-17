@@ -8,7 +8,7 @@ class Game
     int max_happiness;
     int max_action;
 
-//  Game(*life);
+//  Game(Life *);
     void work();
     void study();
     bool fun();
