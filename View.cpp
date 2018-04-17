@@ -3,31 +3,34 @@
 #include "View.h"
 
 using namespace std;
-
-int year = 1;
-int money = 0;
-int intelligence = 0;
-int happiness = 100;
-int work_level = 1;
-int choice;
-int action = 1;
-int salary = 10;
-
 View::View()
 {
 
 }
-void run_menu(int)
+void View::run_menu(int n)
 {
-
+    switch(n)
+    {
+    case 1:
+        display_main_menu();
+        break;
+    case 2:
+        display_life_menu();
+        break;
+    }
+    cout << "Your choice: ";
+    int choice;
+    cin >> choice;
+    last_action = choice;
 }
 void View::display_life_stats()
 {
-    cout << "Year: " << year << "/75" << "\t";
-    cout << " Actions: " << action << "/2" << "\t";
-    cout << "Money: " << money << "\t";
-    cout << "Intelligence: " << intelligence << "\t";
-    cout << "Happiness: " << happiness << endl;
+    /*  cout << "Year: " << year << "/75" << "\t";
+        cout << "Actions: " << action << "/2" << "\t";
+        cout << "Money: " << money << "\t";
+        cout << "Intelligence: " << intelligence << "\t";
+        cout << "Happiness: " << happiness << endl;
+        */
 }
 void View::display_main_menu()
 {
@@ -56,3 +59,10 @@ int View::get_last_action()
 {
     return last_action;
 }
+
+/*
+void View::set_game(*game)
+{
+
+}
+*/

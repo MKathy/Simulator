@@ -12,9 +12,7 @@ int main()
     {
         display_main_menu();
         cout << "Your choice: ";
-        char choice;
-
-        choice = static_cast<char>(getch());
+        int choice = getch();
 
         cout << endl;
         switch(choice)
