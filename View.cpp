@@ -24,13 +24,13 @@ void View::run_menu(int n)
     last_action = choice;
 }
 void View::display_life_stats()
-{
-    /*  cout << "Year: " << year << "/75" << "\t";
-        cout << "Actions: " << action << "/2" << "\t";
-        cout << "Money: " << money << "\t";
-        cout << "Intelligence: " << intelligence << "\t";
-        cout << "Happiness: " << happiness << endl;
-        */
+{/*
+    cout << "Year: " << year << "/75" << "\t";
+    cout << "Actions: " << action << "/2" << "\t";
+    cout << "Money: " << money << "\t";
+    cout << "Intelligence: " << intelligence << "\t";
+    cout << "Happiness: " << happiness << endl;
+*/
 }
 void View::display_main_menu()
 {

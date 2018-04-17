@@ -8,11 +8,10 @@ using namespace std;
 {
 
 }
-*/
 
 int Game::get_year()
 {
-    //return year;
+    return year;
 }
 int Game::get_money()
 {
@@ -41,19 +40,19 @@ int Game::get_salary()
 
 void Game::work()
 {
-    /* money += salary * happiness/100;
+    money += salary * happiness/100;
      happiness = happiness - 2;
-     action++;*/
+     action++;
 }
 void Game::study()
 {
-    /*intelligence += 5 * happiness/100;
+    intelligence += 5 * happiness/100;
      happiness -= 2;
-     action++;*/
+     action++;
 }
 bool Game::fun()
 {
-    /* if (happiness == 100)
+   if (happiness == 100)
      {
          cout << endl << "Happiness can not exceed 100!";
          Sleep(1500);
@@ -67,11 +66,11 @@ bool Game::fun()
      else
          happiness = 100;
      return true;
-     */
+
 }
 bool Game::ask_for_promotion()
 {
-    /*if(intelligence >= 5 + pow(2,work_level))
+   if(intelligence >= 5 + pow(2,work_level))
     {
         cout << "You got promoted!";
         salary += 10;
@@ -85,4 +84,3 @@ bool Game::ask_for_promotion()
         return 0;
     }
     */
-}

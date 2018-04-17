@@ -1,14 +1,15 @@
 #ifndef GAME_H
 #define GAME_H
+#include "Life.h"
 
 class Game
 {
-//  Life *life;
+    Life *life;
     int max_year;
     int max_happiness;
     int max_action;
 
-//  Game(Life *);
+    Game(Life *);
     void work();
     void study();
     bool fun();
@@ -22,7 +23,7 @@ public:
     int get_work_level();
     int get_action();
     int get_salary();
-    //friend Model::create_game();
+    friend create_game();
 };
 
 #endif // GAME_H
