@@ -31,8 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Controler.cpp" />
-		<Unit filename="Controler.h" />
+		<Unit filename="Controller.cpp" />
+		<Unit filename="Controller.h" />
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
 		<Unit filename="Life.cpp" />

@@ -12,3 +12,4 @@ obj/
 # CLion
 .idea/
 cmake-build-debug/
+CMakeList.txt

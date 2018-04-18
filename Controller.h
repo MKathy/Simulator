@@ -1,10 +1,10 @@
-#ifndef CONTROLER_H
-#define CONTROLER_H
+#ifndef CONTROLLER_H
+#define CONTROLLER_H
 #include "Model.h"
 #include "View.h"
 #include "ProgramMode.h"
 
-class Controler
+class Controller
 {
     Model model;
     View view;
@@ -14,9 +14,9 @@ class Controler
     Game *game;
 
 public:
-    Controler();
-    ~Controler();
+    Controller();
+    ~Controller();
     void run();
 };
 
-#endif // CONTROLER_H
+#endif // CONTROLLER_H
