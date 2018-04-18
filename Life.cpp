@@ -3,13 +3,7 @@
 
 using namespace std;
 
-Life::Life(int y, int a, int m, int i, int h, int s, int wl)
+Life::Life(): year(1), action(1), money(0), intelligence(0), happiness(100), salary(10), work_level(1)
 {
-    year = y;
-    action = a;
-    money = m;
-    intelligence = i;
-    happiness = h;
-    salary = s;
-    work_level = wl;
+
 }
