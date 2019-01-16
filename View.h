@@ -2,6 +2,7 @@
 #define VIEW_H
 #include "Game.h"
 #include "Life.h"
+#include "ProgramMode.h"
 
 class View
 {
@@ -15,7 +16,7 @@ class View
 
 public:
     View();
-    void run_menu(int);
+    void run_menu(ProgramMode);
     int get_last_action();
     void set_game(Game*);
 };

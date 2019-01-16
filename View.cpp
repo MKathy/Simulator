@@ -7,14 +7,14 @@ View::View()
 {
 
 }
-void View::run_menu(int n)
+void View::run_menu(ProgramMode mode)
 {
-    switch(n)
+    switch(mode)
     {
-    case 1:
+    case MAIN_MENU:
         display_main_menu();
         break;
-    case 2:
+    case IN_GAME:
         display_life_menu();
         break;
     }
