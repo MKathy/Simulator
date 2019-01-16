@@ -6,18 +6,18 @@
 
 class View
 {
-    int last_action;
+    char last_action;
     Game *game;
 
     void display_life_stats();
     void display_main_menu();
     void display_life_menu();
-    void clear_screen();
 
 public:
     View();
     void run_menu(ProgramMode);
-    int get_last_action();
+    char get_last_action();
     void set_game(Game*);
+    void clear_screen();
 };
 #endif

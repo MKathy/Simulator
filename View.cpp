@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include <conio.h>
 #include "View.h"
 
 using namespace std;
@@ -15,12 +16,13 @@ void View::run_menu(ProgramMode mode)
         display_main_menu();
         break;
     case IN_GAME:
-        display_life_menu();
+        cout << "IN GAME";
+        Sleep(1000);
         break;
     }
     cout << "Your choice: ";
-    int choice;
-    cin >> choice;
+    char choice;
+    choice = getch();
     last_action = choice;
 }
 void View::display_life_stats()
@@ -55,7 +57,7 @@ void View::clear_screen()
     system("cls");
 }
 
-int View::get_last_action()
+char View::get_last_action()
 {
     return last_action;
 }
