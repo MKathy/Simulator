@@ -4,6 +4,7 @@
 *.depend
 *.o
 *.exe
+*.cbp
 
 # generated directories
 bin/

@@ -4,6 +4,7 @@
 class Life
 {
     int year, action, money, intelligence, happiness, salary, work_level;
+    friend class Game;
 public:
     Life();
     friend void create_life();
