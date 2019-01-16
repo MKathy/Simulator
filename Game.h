@@ -23,7 +23,7 @@ public:
     int get_work_level();
     int get_action();
     int get_salary();
-    friend create_game();
+    friend Game * create_game();
 };
 
 #endif // GAME_H
