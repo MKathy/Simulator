@@ -7,6 +7,6 @@ class Life
     friend class Game;
 public:
     Life();
-    friend Life * create_life();
+    Life * create_life();
 };
 #endif // LIVE_H

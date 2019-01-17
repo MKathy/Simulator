@@ -1,15 +1,13 @@
 #include <iostream>
 #include <conio.h>
-#include <chrono>
 #include <thread>
 #include <cstdlib>
 #include "View.h"
 
 using namespace std;
-View::View()
-{
 
-}
+View::View() = default;
+
 void View::run_menu(ProgramMode mode)
 {
     switch(mode)
@@ -24,7 +22,7 @@ void View::run_menu(ProgramMode mode)
     }
     cout << "Your choice: ";
     char choice;
-    choice = getch();
+    choice = static_cast<char>(getch());
     last_action = choice;
 }
 void View::display_life_stats()

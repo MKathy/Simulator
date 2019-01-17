@@ -3,13 +3,14 @@
 
 using namespace std;
 
-Model::Model()
-{
+Model::Model() = default;
+Model::~Model() = default;
 
-}
-Model::~Model()
+Life * create_life()
 {
-
+    return nullptr;
 }
-//Life * create_life();
-//Game * create_game();
+Game * create_game()
+{
+    return nullptr;
+}

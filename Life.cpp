@@ -7,3 +7,7 @@ Life::Life(): year(1), action(1), money(0), intelligence(0), happiness(100), sal
 {
 
 }
+Life * Life::create_life()
+{
+    return nullptr;
+}

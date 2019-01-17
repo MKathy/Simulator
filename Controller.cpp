@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include <chrono>
 #include <thread>
 #include "Controller.h"
 
@@ -10,10 +9,8 @@ Controller::Controller(): mode(MAIN_MENU)
 {
 
 }
-Controller::~Controller()
-{
+Controller::~Controller() = default;
 
-}
 void Controller::run()
 {
     while(true)
@@ -37,7 +34,6 @@ void Controller::run()
             break;
         case '4':
             exit(0);
-            break;
         default:
             cout << endl << "There is no such option in the menu.";
             this_thread::sleep_for(chrono::milliseconds(1000));
