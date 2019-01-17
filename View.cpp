@@ -1,6 +1,8 @@
 #include <iostream>
-#include <windows.h>
 #include <conio.h>
+#include <chrono>
+#include <thread>
+#include <cstdlib>
 #include "View.h"
 
 using namespace std;
@@ -17,7 +19,7 @@ void View::run_menu(ProgramMode mode)
         break;
     case IN_GAME:
         cout << "IN GAME";
-        Sleep(1000);
+        this_thread::sleep_for(chrono::milliseconds(1000));
         break;
     }
     cout << "Your choice: ";

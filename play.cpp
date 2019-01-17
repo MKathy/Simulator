@@ -1,8 +1,10 @@
 #include <iostream>
-#include "play.h"
-#include <windows.h>
 #include <conio.h>
 #include <math.h>
+#include <chrono>
+#include <thread>
+#include <cstdlib>
+#include "play.h"
 
 using namespace std;
 
@@ -51,7 +53,7 @@ void play()
             if (happiness == 100)
             {
                 cout << endl << "Happiness can not exceed 100!";
-                Sleep(1500);
+                this_thread::sleep_for(chrono::milliseconds(1500));
                 break;
             }
             if(happiness <= 97)
@@ -71,7 +73,7 @@ void play()
             else
             {
                 cout << endl << "Your intelligence is too low! You need to have IQ = " << 5 + pow(2,work_level);
-                Sleep(2000);
+                this_thread::sleep_for(chrono::milliseconds(2000));
             }
             break;
         case '5':
@@ -85,12 +87,12 @@ void play()
             action = 1;
             year++;
         }
-        Sleep(500);
+        this_thread::sleep_for(chrono::milliseconds(500));
         if(happiness < 0) happiness = 0;
         if(year>75)
         {
             cout << endl << "Game over! Your result: " << money << " $";
-            Sleep(2000);
+            this_thread::sleep_for(chrono::milliseconds(2000));
             exit(0);
         }
     }
